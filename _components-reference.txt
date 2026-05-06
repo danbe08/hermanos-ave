@@ -1,0 +1,15 @@
+<!-- 
+  HERMANOS AVE — Shared Components Reference
+  Copy the relevant blocks into each HTML page.
+  
+  STRUCTURE:
+  hermanos-ave/
+  ├── index.html
+  ├── products.html
+  ├── story.html
+  ├── contact.html
+  ├── css/
+  │   └── style.css
+  └── js/
+      └── main.js
+-->

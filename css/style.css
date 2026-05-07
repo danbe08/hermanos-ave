@@ -169,7 +169,7 @@ nav {
 
 .hero-title {
   font-family: var(--font-title);
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-size: clamp(2.2rem, 7vw, 5rem);
   font-weight: 700;
   letter-spacing: clamp(4px, 2vw, 16px);
   color: var(--gold);

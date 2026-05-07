@@ -65,25 +65,13 @@
       width: 100%;
       max-width: 320px;
       transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
-      border-radius: 4px;
-      overflow: hidden;
     }
     .bottle-img-wrap:hover { transform: translateY(-10px) scale(1.02); }
     .bottle-img-wrap img {
       width: 100%;
       height: auto;
       display: block;
-      mix-blend-mode: darken;
-      filter: drop-shadow(0 24px 48px rgba(0,0,0,0.6));
-    }
-    .bottle-img-wrap::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: #1c2e14;
-      mix-blend-mode: darken;
-      pointer-events: none;
-      border-radius: 4px;
+      filter: drop-shadow(0 24px 64px rgba(0,0,0,0.55));
     }
     .product-badge-float {
       position: absolute;
@@ -218,16 +206,38 @@
 
     @media (max-width: 768px) {
       .product-showcase { grid-template-columns: 1fr; }
-      .product-visual { min-height: 340px; border-right: none; border-bottom: 1px solid var(--gold-dim); padding: 2.5rem 1.25rem; overflow: hidden; }
-      .product-info { border-left: none; padding: 2rem 1.25rem; }
-      .price-block { flex-direction: column; align-items: flex-start; gap: 12px; }
-      .product-card-name { font-size: clamp(1.4rem, 7vw, 2rem); }
-      .lifestyle-overlay { background: linear-gradient(to bottom, rgba(10,26,8,0.8) 0%, rgba(10,26,8,0.3) 100%); align-items: flex-end; padding-bottom: 2rem; }
+      .product-visual {
+        min-height: 280px;
+        border-right: none;
+        border-bottom: 1px solid var(--gold-dim);
+        padding: 2.5rem 1.25rem;
+        order: -1;
+      }
+      #reposado .product-info { order: 1; }
+      #reposado .product-visual { display: none; }
+      .product-info { border-left: none; border-right: none; padding: 2rem 1.25rem 2.5rem; }
+      .price-block { flex-direction: row; align-items: center; gap: 12px; }
+      .product-card-name { font-size: clamp(1.5rem, 7vw, 2rem); }
+      .lifestyle-overlay {
+        background: linear-gradient(to bottom, rgba(10,26,8,0.75) 0%, rgba(10,26,8,0.5) 60%, rgba(10,26,8,0.85) 100%);
+        align-items: flex-end;
+        padding: 1.5rem 1.25rem 2rem;
+      }
+      .lifestyle-content { max-width: 100%; }
+      .lifestyle-title { font-size: clamp(1.4rem, 6vw, 2rem); }
+      .lifestyle-body { font-size: 0.9rem; line-height: 1.65; }
     }
     @media (max-width: 480px) {
-      .bottle-img-wrap { max-width: 200px; margin: 0 auto; }
-      .lifestyle-img { height: 260px; }
+      .bottle-img-wrap { max-width: 180px; margin: 0 auto; }
+      .lifestyle-img { height: 340px; }
       .price-value { font-size: 1.2rem; }
+      .price-block { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .product-card-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+      .tasting-notes { gap: 6px; }
+      .tasting-note { font-size: 0.65rem; padding: 5px 10px; letter-spacing: 2px; }
+      .product-info .btn { width: 100%; text-align: center; padding: 14px 20px; font-size: 0.7rem; }
+      .cta-buttons { flex-direction: column; }
+      .product-badge-float { font-size: 0.6rem; letter-spacing: 2px; padding: 5px 12px; }
     }
   </style>
 </head>
@@ -750,7 +760,7 @@
       <div class="product-visual">
         <span class="product-badge-float">Silver Edition</span>
         <div class="bottle-img-wrap">
-          <img src="images/bottle-silver.jpg" alt="Hermanos AVE Tequila Silver bottle" />
+          <img src="images/bottle-silver-nobg.png" alt="Hermanos AVE Tequila Silver bottle" />
         </div>
       </div>
 
@@ -784,7 +794,7 @@
           <div><span class="spec-item-label">Style</span><span class="spec-item-value">Unaged / Blanco</span></div>
           <div><span class="spec-item-label">Certification</span><span class="spec-item-value">NOM 1122 CRT</span></div>
         </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <div class="cta-buttons" style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="contact.html" class="btn btn-teal">Enquire about this expression</a>
           <a href="story.html" class="btn btn-outline" style="border-color:rgba(154,199,216,0.3);color:var(--teal-light);">Our story</a>
         </div>
@@ -826,7 +836,7 @@
           <div><span class="spec-item-label">Ageing</span><span class="spec-item-value">Oak barrels</span></div>
           <div><span class="spec-item-label">Certification</span><span class="spec-item-value">NOM 1122 CRT</span></div>
         </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <div class="cta-buttons" style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="contact.html" class="btn btn-outline" style="border-color:rgba(242,185,12,0.4);color:var(--gold);opacity:0.7;">Notify me when available</a>
         </div>
       </div>

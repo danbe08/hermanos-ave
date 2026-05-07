@@ -43,7 +43,7 @@
       min-height: 600px;
     }
     .product-visual {
-      background: #111c0e;
+      background: #1c2e14;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -56,7 +56,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 50% 40%, rgba(242,185,12,0.05) 0%, transparent 65%);
+      background: radial-gradient(ellipse at 50% 60%, rgba(242,185,12,0.06) 0%, transparent 65%);
       pointer-events: none;
     }
     .bottle-img-wrap {
@@ -71,7 +71,8 @@
       width: 100%;
       height: auto;
       display: block;
-      filter: drop-shadow(0 32px 64px rgba(242,185,12,0.18));
+      mix-blend-mode: multiply;
+      filter: drop-shadow(0 24px 48px rgba(0,0,0,0.4));
     }
     .product-badge-float {
       position: absolute;
@@ -206,14 +207,16 @@
 
     @media (max-width: 768px) {
       .product-showcase { grid-template-columns: 1fr; }
-      .product-visual { min-height: 380px; border-right: none; border-bottom: 1px solid var(--gold-dim); }
-      .product-info { border-left: none; }
+      .product-visual { min-height: 340px; border-right: none; border-bottom: 1px solid var(--gold-dim); padding: 2.5rem 1.25rem; overflow: hidden; }
+      .product-info { border-left: none; padding: 2rem 1.25rem; }
       .price-block { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .product-card-name { font-size: clamp(1.4rem, 7vw, 2rem); }
       .lifestyle-overlay { background: linear-gradient(to bottom, rgba(10,26,8,0.8) 0%, rgba(10,26,8,0.3) 100%); align-items: flex-end; padding-bottom: 2rem; }
     }
     @media (max-width: 480px) {
-      .bottle-img-wrap { max-width: 220px; }
+      .bottle-img-wrap { max-width: 200px; margin: 0 auto; }
       .lifestyle-img { height: 260px; }
+      .price-value { font-size: 1.2rem; }
     }
   </style>
 </head>
@@ -221,8 +224,7 @@
 
 <!-- AGE GATE -->
 <div id="age-gate">
-  <div class="age-gate-logo">HERMANOS AVE</div>
-  <div class="age-gate-sub">T E Q U I L A</div>
+  <img src="images/logo-ave-gold.svg" alt="Hermanos AVE" style="width:clamp(180px,40vw,320px);height:auto;margin-bottom:32px;opacity:0.95;" />
   <div class="age-gate-line"></div>
   <p class="age-gate-question">Are you of legal drinking age?</p>
   <p class="age-gate-sub-text">You must be 18 or over to enter this site</p>
@@ -359,12 +361,12 @@
       </div>
 
       <!-- Sold out panel — no bottle image -->
-      <div class="product-visual" style="border-left:1px solid var(--gold-dim);border-right:none;flex-direction:column;gap:24px;">
-        <div style="width:60px;height:1px;background:rgba(242,185,12,0.2);"></div>
-        <span style="font-family:var(--font-title);font-size:clamp(1.2rem,3vw,1.8rem);font-weight:700;letter-spacing:10px;color:rgba(240,234,216,0.2);">SOLD</span>
-        <span style="font-family:var(--font-title);font-size:clamp(1.2rem,3vw,1.8rem);font-weight:700;letter-spacing:10px;color:rgba(240,234,216,0.2);">OUT</span>
-        <div style="width:60px;height:1px;background:rgba(242,185,12,0.2);"></div>
-        <span style="font-family:var(--font-title);font-size:0.65rem;letter-spacing:4px;color:rgba(242,185,12,0.3);">Coming back soon</span>
+      <div class="product-visual" style="border-left:1px solid var(--gold-dim);border-right:none;flex-direction:column;gap:20px;">
+        <div style="width:48px;height:1px;background:rgba(242,185,12,0.4);"></div>
+        <span style="font-family:var(--font-title);font-size:clamp(2rem,5vw,3.5rem);font-weight:700;letter-spacing:12px;color:rgba(240,234,216,0.65);">SOLD</span>
+        <span style="font-family:var(--font-title);font-size:clamp(2rem,5vw,3.5rem);font-weight:700;letter-spacing:12px;color:rgba(240,234,216,0.65);">OUT</span>
+        <div style="width:48px;height:1px;background:rgba(242,185,12,0.4);"></div>
+        <span style="font-family:var(--font-title);font-size:0.7rem;letter-spacing:4px;color:rgba(242,185,12,0.6);">Coming back soon</span>
       </div>
 
     </div>

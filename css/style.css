@@ -85,12 +85,58 @@ nav {
 
 .nav-logo {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.nav-logo-text {
+  display: flex;
   flex-direction: column;
   gap: 2px;
-  text-decoration: none;
 }
 .nav-logo-main { font-family: var(--font-title); font-size: 1rem; font-weight: 700; letter-spacing: 5px; color: var(--gold); line-height: 1; }
 .nav-logo-sub { font-family: var(--font-title); font-size: 0.65rem; letter-spacing: 7px; color: var(--teal); }
+
+/* Isotipo in navbar */
+.nav-isotipo {
+  width: 32px;
+  height: auto;
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+/* Right side of nav: lang button + hamburger */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Language toggle button */
+.lang-btn {
+  font-family: var(--font-title);
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: var(--gold);
+  background: none;
+  border: 1px solid rgba(242,185,12,0.4);
+  border-radius: 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-transform: uppercase;
+}
+.lang-btn:hover {
+  background: rgba(242,185,12,0.1);
+  border-color: var(--gold);
+}
+.lang-btn-mobile {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  padding: 8px 20px;
+  border-color: rgba(242,185,12,0.5);
+}
 
 .nav-links { display: flex; gap: 40px; list-style: none; }
 .nav-links a {
@@ -184,9 +230,20 @@ nav {
   font-style: italic;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   color: var(--cream-dim);
-  margin-bottom: 60px;
+  margin-bottom: 12px;
   opacity: 0;
   animation: fadeUp 0.8s ease 0.6s forwards;
+}
+
+.hero-subtitle {
+  font-family: var(--font-title);
+  font-size: clamp(0.65rem, 1.2vw, 0.85rem);
+  letter-spacing: 4px;
+  color: rgba(242,185,12,0.55);
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.75s forwards;
 }
 
 .hero-divider {
@@ -744,6 +801,8 @@ footer {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
+  .nav-right { gap: 12px; }
+  .nav-isotipo { width: 26px; }
   nav { padding: 0 1.25rem; }
 
   .hero { padding: 3rem 1.25rem; }

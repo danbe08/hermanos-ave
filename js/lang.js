@@ -126,7 +126,7 @@ const translations = {
 
     /* INDEX — HERO */
     hero_eyebrow:   'Jalisco, México · 100% Agave Azul',
-    hero_tagline:   'Alas de tradición, gusto elevado',
+    hero_tagline:   'De la raíz al cielo, un sabor sin límites',
     hero_subtitle:  'Nacido en Jalisco, creado para el mundo.',
     hero_cta1:      'Descubre nuestros tequilas',
     hero_cta2:      'Nuestra historia',
@@ -164,7 +164,7 @@ const translations = {
     life_cta:     'Descubre cómo disfrutarlo',
 
     /* INDEX — FOOTER */
-    footer_tagline:  'Alas de tradición, gusto elevado.',
+    footer_tagline:  'De la raíz al cielo, un sabor sin límites.',
     footer_subtitle: 'Nacido en Jalisco, creado para el mundo.',
     footer_nav:      'Navegación',
     footer_legal:    '© 2025 Hermanos AVE Tequila. Todos los derechos reservados.',

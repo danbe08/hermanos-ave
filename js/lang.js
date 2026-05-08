@@ -126,7 +126,7 @@ const translations = {
 
     /* INDEX — HERO */
     hero_eyebrow:   'Jalisco, México · 100% Agave Azul',
-    hero_tagline:   'Alas de tradición, sabor elevado',
+    hero_tagline:   'Alas de tradición, gusto elevado',
     hero_subtitle:  'Nacido en Jalisco, creado para el mundo.',
     hero_cta1:      'Descubre nuestros tequilas',
     hero_cta2:      'Nuestra historia',
@@ -141,7 +141,7 @@ const translations = {
     /* INDEX — ABOUT BLOCK */
     about_eyebrow:  'Nuestro Espíritu',
     about_title:    'Dos hermanos. Un llamado.',
-    about_body:     'Hermanos AVE nació del amor compartido por la tierra y el profundo respeto por el arte del tequila. Cada botella lleva el alma de Jalisco — los campos de agave, los cielos abiertos y los pájaros que inspiraron nuestro nombre.',
+    about_body:     'Hermanos AVE nació del amor compartido por la tierra y el profundo respeto por el arte del tequila. Cada botella lleva el alma de Jalisco — los campos de agave, los cielos abiertos y las aves que inspiraron nuestro nombre.',
     about_cta:      'Lee nuestra historia',
 
     /* INDEX — PRODUCT TEASE */
@@ -160,11 +160,11 @@ const translations = {
     /* INDEX — LIFESTYLE */
     life_eyebrow: 'El Estilo Hermanos AVE',
     life_title:   'Bebe despacio. Saborea todo.',
-    life_body:    'El buen tequila nunca se apresura. Es un iniciador de conversación, un momento de pausa, una celebración del arte.',
+    life_body:    'El buen tequila nunca se apresura. Es un iniciador de conversación, un momento de pausa, una celebración de la artesanía.',
     life_cta:     'Descubre cómo disfrutarlo',
 
     /* INDEX — FOOTER */
-    footer_tagline:  'Alas de tradición, sabor elevado.',
+    footer_tagline:  'Alas de tradición, gusto elevado.',
     footer_subtitle: 'Nacido en Jalisco, creado para el mundo.',
     footer_nav:      'Navegación',
     footer_legal:    '© 2025 Hermanos AVE Tequila. Todos los derechos reservados.',
@@ -172,11 +172,11 @@ const translations = {
 
     /* PRODUCTS PAGE */
     products_hero_title: 'Nuestros Tequilas',
-    products_hero_sub:   'Cada gota cuenta una historia de tierra, craft y tiempo.',
+    products_hero_sub:   'Cada gota cuenta una historia de tierra, artesanía y tiempo.',
     silver_edition:  'Edición Silver',
     silver_label:    'Edición Silver · Etiqueta Azul',
     silver_name:     'Hermanos AVE\nTequila Silver',
-    silver_desc:     'Sin añejar y sin disculpas, nuestro Silver captura el alma pura del agave azul. Cristalino y brillantemente fresco — este es el tequila en su forma más natural. Notas brillantes de cítricos y flores danzan libremente, como las aves que inspiraron nuestro nombre.',
+    silver_desc:     'Sin añejar y sin disculpas, nuestro Silver captura el alma pura del agave azul. Cristalino y brillantemente fresco — este es el tequila en su forma más natural. Notas brillantes de cítricos y flores danzan libremente, como las aves que inspiraron nuestro nombre, listas para alzar vuelo en tu paladar.',
     silver_tasting:  'Notas de cata',
     silver_enquire:  'Consultar precio',
     silver_avail:    'Disponible ahora',

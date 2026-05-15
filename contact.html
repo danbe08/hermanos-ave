@@ -264,8 +264,8 @@
   <p class="age-gate-question">Are you of legal drinking age?</p>
   <p class="age-gate-sub-text">You must be 18 or over to enter this site</p>
   <div class="age-gate-buttons">
-    <button id="age-yes" class="age-gate-btn yes">Yes, I am</button>
-    <button id="age-no"  class="age-gate-btn no">No, I am not</button>
+    <button id="age-yes" class="age-gate-btn yes" data-i18n="age_yes">Yes, I am</button>
+    <button id="age-no"  class="age-gate-btn no" data-i18n="age_no">No, I am not</button>
   </div>
   <p class="age-gate-legal">Please drink responsibly &nbsp;·&nbsp; Product of Mexico</p>
 </div>
@@ -273,7 +273,7 @@
 <!-- ── NAVIGATION ────────────────────────────────────────────── -->
 <nav>
   <a href="index.html" class="nav-logo">
-    <img src="images/isotipo-gold.svg" alt="Hermanos AVE isotipo" class="nav-isotipo" />
+    <img src="images/isotipo-canario-nobg.png" alt="Hermanos AVE isotipo" class="nav-isotipo" />
     <div class="nav-logo-text">
       <span class="nav-logo-main">HERMANOS AVE</span>
       <span class="nav-logo-sub">T E Q U I L A</span>
@@ -531,10 +531,10 @@
         <path fill="#F2B90C" d="M273.83,22.13c-.15,0-.25.07-.32.16,0-.02,0-.04-.08-.04-.18,0-.9.33-.51.33.11,0,.41-.13.54-.22-.07.16-.01.34.3.34.45,0,.62-.57.07-.57Z"/>
       </g>
 </svg></div>
-    <span class="section-eyebrow reveal">We'd love to hear from you</span>
-    <h1 class="section-title reveal" style="font-size: clamp(2rem, 6vw, 4rem);">Get in touch</h1>
+    <span class="section-eyebrow reveal" data-i18n="contact_hero_eyebrow">We'd love to hear from you</span>
+    <h1 class="section-title reveal" style="font-size: clamp(2rem, 6vw, 4rem);" data-i18n="contact_hero_title">Get in touch</h1>
     <p class="section-body reveal" style="margin: 0 auto; text-align: center; max-width: 480px;">
-      Whether you're a retailer, a bar owner, press, or simply a tequila lover — the flight begins with a conversation.
+      <span data-i18n="contact_hero_sub">Whether you're a retailer, a bar owner, press, or simply a tequila lover — the flight begins with a conversation.</span>
     </p>
   </section>
 
@@ -544,12 +544,12 @@
 
       <!-- LEFT: Info -->
       <div>
-        <span class="section-eyebrow reveal">Contact information</span>
-        <h2 class="section-title reveal" style="font-size: clamp(1.4rem, 3vw, 2rem); color: var(--cream);">Find us</h2>
+        <span class="section-eyebrow reveal" data-i18n="contact_info_eyebrow">Contact information</span>
+        <h2 class="section-title reveal" style="font-size: clamp(1.4rem, 3vw, 2rem); color: var(--cream);" data-i18n="contact_find_us">Find us</h2>
         <div class="gold-line reveal"></div>
 
         <div class="contact-info-item reveal">
-          <span class="contact-info-label">Address</span>
+          <span class="contact-info-label" data-i18n="contact_address_label">Address</span>
           <p class="contact-info-value">
             Cañada de Tachicoutle No. 17<br>
             Col. Centro, Tequila<br>
@@ -559,14 +559,14 @@
         </div>
 
         <div class="contact-info-item reveal">
-          <span class="contact-info-label">Email</span>
+          <span class="contact-info-label" data-i18n="contact_email_label">Email</span>
           <p class="contact-info-value">
             <a href="mailto:info@hermanosave.com">info@hermanosave.com</a>
           </p>
         </div>
 
         <div class="contact-info-item reveal">
-          <span class="contact-info-label">Follow us</span>
+          <span class="contact-info-label" data-i18n="contact_follow_label" data-i18n="footer_follow">Follow us</span>
           <p class="contact-info-value" style="display:flex;flex-direction:column;gap:8px;">
             <a href="#" style="color:var(--teal-light);text-decoration:none;font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;">Instagram ↗</a>
             <a href="#" style="color:var(--teal-light);text-decoration:none;font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;">Facebook ↗</a>
@@ -576,34 +576,34 @@
 
         <!-- Enquiry types -->
         <div class="reveal" style="border: 1px solid var(--gold-dim); padding: 2rem; background: var(--green-brand); margin-top: 8px;">
-          <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:4px;color:var(--teal);display:block;margin-bottom:20px;">We welcome enquiries from</span>
+          <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:4px;color:var(--teal);display:block;margin-bottom:20px;" data-i18n="contact_welcome">We welcome enquiries from</span>
           <div style="display:flex;flex-direction:column;gap:14px;">
             <div style="display:flex;gap:12px;align-items:flex-start;">
               <div style="width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:6px;flex-shrink:0;"></div>
               <div>
-                <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;color:var(--gold);display:block;margin-bottom:4px;">Retailers &amp; distributors</span>
-                <span style="font-family:var(--font-body);font-size:0.85rem;color:var(--cream-faint);">Looking to stock Hermanos AVE in your store or portfolio</span>
+                <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;color:var(--gold);display:block;margin-bottom:4px;" data-i18n="contact_type1_title">Retailers &amp; distributors</span>
+                <span style="font-family:var(--font-body);font-size:0.85rem;color:var(--cream-faint);" data-i18n="contact_type1_desc">Looking to stock Hermanos AVE in your store or portfolio</span>
               </div>
             </div>
             <div style="display:flex;gap:12px;align-items:flex-start;">
               <div style="width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:6px;flex-shrink:0;"></div>
               <div>
-                <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;color:var(--gold);display:block;margin-bottom:4px;">Bars &amp; restaurants</span>
-                <span style="font-family:var(--font-body);font-size:0.85rem;color:var(--cream-faint);">Adding a premium Mexican tequila to your back bar</span>
+                <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;color:var(--gold);display:block;margin-bottom:4px;" data-i18n="contact_type2_title">Bars &amp; restaurants</span>
+                <span style="font-family:var(--font-body);font-size:0.85rem;color:var(--cream-faint);" data-i18n="contact_type2_desc">Adding a premium Mexican tequila to your back bar</span>
               </div>
             </div>
             <div style="display:flex;gap:12px;align-items:flex-start;">
               <div style="width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:6px;flex-shrink:0;"></div>
               <div>
-                <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;color:var(--gold);display:block;margin-bottom:4px;">Press &amp; media</span>
-                <span style="font-family:var(--font-body);font-size:0.85rem;color:var(--cream-faint);">Press samples, interviews, and brand stories</span>
+                <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;color:var(--gold);display:block;margin-bottom:4px;" data-i18n="contact_type3_title">Press &amp; media</span>
+                <span style="font-family:var(--font-body);font-size:0.85rem;color:var(--cream-faint);" data-i18n="contact_type3_desc">Press samples, interviews, and brand stories</span>
               </div>
             </div>
             <div style="display:flex;gap:12px;align-items:flex-start;">
               <div style="width:6px;height:6px;border-radius:50%;background:var(--gold);margin-top:6px;flex-shrink:0;"></div>
               <div>
-                <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;color:var(--gold);display:block;margin-bottom:4px;">Events &amp; collaborations</span>
-                <span style="font-family:var(--font-body);font-size:0.85rem;color:var(--cream-faint);">Tastings, brand activations, and special occasions</span>
+                <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:2px;color:var(--gold);display:block;margin-bottom:4px;" data-i18n="contact_type4_title">Events &amp; collaborations</span>
+                <span style="font-family:var(--font-body);font-size:0.85rem;color:var(--cream-faint);" data-i18n="contact_type4_desc">Tastings, brand activations, and special occasions</span>
               </div>
             </div>
           </div>
@@ -612,64 +612,64 @@
 
       <!-- RIGHT: Form -->
       <div class="reveal">
-        <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:4px;color:var(--teal);display:block;margin-bottom:28px;">Send a message</span>
+        <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:4px;color:var(--teal);display:block;margin-bottom:28px;" data-i18n="contact_form_header">Send a message</span>
 
         <form id="contact-form" class="contact-form" action="https://formspree.io/f/mdabewoj" method="POST">
           <div class="form-row">
             <div class="form-group">
-              <label for="first-name">First name</label>
+              <label for="first-name" data-i18n="contact_first_name">First name</label>
               <input type="text" id="first-name" name="first-name" placeholder="Miguel" required />
             </div>
             <div class="form-group">
-              <label for="last-name">Last name</label>
+              <label for="last-name" data-i18n="contact_last_name">Last name</label>
               <input type="text" id="last-name" name="last-name" placeholder="García" required />
             </div>
           </div>
 
           <div class="form-group">
-            <label for="email">Email address</label>
+            <label for="email" data-i18n="contact_email_lbl">Email address</label>
             <input type="email" id="email" name="email" placeholder="miguel@example.com" required />
           </div>
 
           <div class="form-group">
-            <label for="company">Company / Organisation (optional)</label>
+            <label for="company" data-i18n="contact_company">Company / Organisation (optional)</label>
             <input type="text" id="company" name="company" placeholder="Your bar, restaurant, or business" />
           </div>
 
           <div class="form-group">
-            <label for="enquiry-type">Nature of enquiry</label>
+            <label for="enquiry-type" data-i18n="contact_enquiry_type">Nature of enquiry</label>
             <select id="enquiry-type" name="enquiry-type" required>
-              <option value="" disabled selected>Select one...</option>
-              <option value="retail">Retail / Distribution</option>
-              <option value="horeca">Bar / Restaurant</option>
-              <option value="press">Press / Media</option>
-              <option value="events">Events / Collaborations</option>
-              <option value="general">General enquiry</option>
+              <option value="" disabled selected data-i18n="contact_select">Select one...</option>
+              <option value="retail" data-i18n="contact_opt_retail">Retail / Distribution</option>
+              <option value="horeca" data-i18n="contact_opt_bar">Bar / Restaurant</option>
+              <option value="press" data-i18n="contact_opt_press">Press / Media</option>
+              <option value="events" data-i18n="contact_opt_events">Events / Collaborations</option>
+              <option value="general" data-i18n="contact_opt_general">General enquiry</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="message">Your message</label>
+            <label for="message" data-i18n="contact_message_lbl">Your message</label>
             <textarea id="message" name="message" placeholder="Tell us about your enquiry..." required></textarea>
           </div>
 
           <div style="display:flex;align-items:flex-start;gap:10px;margin-top:4px;">
             <input type="checkbox" id="legal" name="legal" required style="margin-top:3px;accent-color:var(--gold);width:14px;height:14px;flex-shrink:0;" />
             <label for="legal" style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:1px;color:var(--cream-faint);cursor:pointer;line-height:1.7;">
-              I confirm I am of legal drinking age and agree to be contacted by Hermanos AVE regarding my enquiry. We will not share your information with third parties.
+              <span data-i18n="contact_legal_text">I confirm I am of legal drinking age and agree to be contacted by Hermanos AVE regarding my enquiry. We will not share your information with third parties.</span>
             </label>
           </div>
 
           <button type="submit" class="btn btn-gold" style="margin-top:8px;width:100%;justify-content:center;">
-            Send message
+            <span data-i18n="contact_send">Send message</span>
           </button>
         </form>
 
         <!-- Success state -->
         <div id="form-success" class="form-success">
           <div style="width:48px;height:1px;background:var(--gold);margin:0 auto 24px;"></div>
-          <p class="form-success-title">Message received</p>
-          <p class="form-success-text">Thank you for reaching out. We'll be in touch shortly. In the meantime, welcome to the flight.</p>
+          <p class="form-success-title" data-i18n="contact_success_title">Message received</p>
+          <p class="form-success-text"><span data-i18n="contact_success_body">Thank you for reaching out. We'll be in touch shortly. In the meantime, welcome to the flight.</span></p>
           <div style="width:48px;height:1px;background:var(--gold);margin:24px auto 0;"></div>
         </div>
       </div>
@@ -915,10 +915,10 @@
 </svg></div>
     <div class="footer-brand-name">HERMANOS AVE</div>
       <div class="footer-brand-tequila">T E Q U I L A</div>
-      <p class="footer-tagline">Wings of tradition, elevated taste.<br>Born in Jalisco, crafted for the world.</p>
+      <p class="footer-tagline"><span data-i18n="footer_tagline">Wings of tradition, elevated taste.</span><br><span data-i18n="footer_subtitle">Born in Jalisco, crafted for the world.</span></p>
     </div>
     <div class="footer-col">
-      <span class="footer-col-title">Navigate</span>
+      <span class="footer-col-title" data-i18n="footer_nav">Navigate</span>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Our Tequilas</a></li>
@@ -927,7 +927,7 @@
       </ul>
     </div>
     <div class="footer-col">
-      <span class="footer-col-title">Products</span>
+      <span class="footer-col-title" data-i18n="footer_products">Products</span>
       <ul>
         <li><a href="products.html#reposado">Tequila Reposado</a></li>
         <li><a href="products.html#silver">Tequila Silver</a></li>
@@ -943,8 +943,8 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span class="footer-legal-text">© 2025 Hermanos AVE Tequila. All rights reserved. Product of Mexico.</span>
-    <span class="footer-drink">Please drink responsibly &nbsp;·&nbsp; 18+ only</span>
+    <span class="footer-legal-text"><span data-i18n="footer_legal">© 2025 Hermanos AVE Tequila. All rights reserved. Product of Mexico.</span>
+    <span class="footer-drink"><span data-i18n="footer_drink_short">Please drink responsibly · 18+ only</span>
   </div>
 </footer>
 

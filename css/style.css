@@ -100,9 +100,9 @@ nav {
 
 /* Isotipo in navbar */
 .nav-isotipo {
-  width: 32px;
+  width: 44px;
   height: auto;
-  opacity: 0.9;
+  opacity: 0.95;
   flex-shrink: 0;
 }
 

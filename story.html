@@ -273,34 +273,27 @@
 <!-- ── NAVIGATION ────────────────────────────────────────────── -->
 <nav>
   <a href="index.html" class="nav-logo">
-    <img src="images/isotipo-canario-nobg.png" alt="Hermanos AVE isotipo" class="nav-isotipo" />
-    <div class="nav-logo-text">
-      <span class="nav-logo-main">HERMANOS AVE</span>
-      <span class="nav-logo-sub">T E Q U I L A</span>
-    </div>
+    <span class="nav-logo-main">HERMANOS AVE</span>
+    <span class="nav-logo-sub">T E Q U I L A</span>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-    <li><a href="products.html" data-i18n="nav_tequilas">Our Tequilas</a></li>
-    <li><a href="story.html" data-i18n="nav_story">Our Story</a></li>
-    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Our Tequilas</a></li>
+    <li><a href="story.html">Our Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
-  <div class="nav-right">
-    <button id="lang-toggle" class="lang-btn" onclick="toggleLang()" aria-label="Switch to Spanish">ES</button>
-    <div id="hamburger" class="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </div>
+  <div id="hamburger" class="nav-hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
   </div>
 </nav>
 
 <!-- ── MOBILE NAV ─────────────────────────────────────────────── -->
 <div id="mobile-nav" class="nav-mobile">
   <button id="mobile-close" style="position:absolute;top:28px;right:28px;background:none;border:none;color:var(--cream-dim);font-size:1.5rem;cursor:pointer;">✕</button>
-  <a href="index.html" data-i18n="nav_home">Home</a>
-  <a href="products.html" data-i18n="nav_tequilas">Our Tequilas</a>
-  <a href="story.html" data-i18n="nav_story">Our Story</a>
-  <a href="contact.html" data-i18n="nav_contact">Contact</a>
-  <button class="lang-btn lang-btn-mobile" onclick="toggleLang()" aria-label="Switch language">ES</button>
+  <a href="index.html">Home</a>
+  <a href="products.html">Our Tequilas</a>
+  <a href="story.html">Our Story</a>
+  <a href="contact.html">Contact</a>
 </div>
 
 <!-- ── MAIN ──────────────────────────────────────────────────── -->
@@ -531,10 +524,10 @@
         <path fill="#F2B90C" d="M273.83,22.13c-.15,0-.25.07-.32.16,0-.02,0-.04-.08-.04-.18,0-.9.33-.51.33.11,0,.41-.13.54-.22-.07.16-.01.34.3.34.45,0,.62-.57.07-.57Z"/>
       </g>
 </svg></div>
-    <span class="section-eyebrow reveal">data-i18n="story_eyebrow_hero">El néctar alado</span>
-    <h1 class="section-title reveal" style="font-size: clamp(2rem, 6vw, 4rem);" data-i18n="story_hero_title">Our story</h1>
+    <span class="section-eyebrow reveal">The winged nectar</span>
+    <h1 class="section-title reveal" style="font-size: clamp(2rem, 6vw, 4rem);">Our story</h1>
     <p class="section-body reveal" style="margin: 0 auto; text-align: center; max-width: 520px;">
-      <span data-i18n="story_hero_sub">A bond between brothers. A passion for Mexico's finest spirit. A name that takes flight.</span>
+      A bond between brothers. A passion for Mexico's finest spirit. A name that takes flight.
     </p>
   </section>
 
@@ -542,49 +535,53 @@
   <section class="section">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(2rem, 5vw, 8rem); align-items: start;">
       <div>
-        <span class="section-eyebrow reveal" data-i18n="story_eyebrow1">Where it all began</span>
-        <h2 class="section-title reveal" data-i18n-html="true" data-i18n="story_title1">From the heart<br>of Jalisco</h2>
+        <span class="section-eyebrow reveal">Where it all began</span>
+        <h2 class="section-title reveal">From the heart<br>of Jalisco</h2>
         <div class="gold-line reveal"></div>
         <p class="section-body reveal">
-          <span data-i18n="story_body1">Hermanos AVE originates in the heart of Mexico's esteemed Tequila region — Jalisco — where the art of tequila-making is not just a craft, but a way of life deeply rooted across generations.</span>
+          Hermanos AVE originates in the heart of Mexico's esteemed Tequila region — Jalisco — where the art of tequila-making is not just a craft, but a way of life deeply rooted across generations.
         </p>
         <br>
         <p class="section-body reveal">
-          <span data-i18n="story_body2">The brand was born from a brotherhood. "Hermanos" — brothers in Spanish — represents the bond that fuels our passion for crafting tequila. A passion that goes beyond the bottle, into the land, the agave, and the spirit of Mexico itself.</span>
+          The brand was born from a brotherhood. "Hermanos" — brothers in Spanish — represents the bond that fuels our passion for crafting tequila. A passion that goes beyond the bottle, into the land, the agave, and the spirit of Mexico itself.
         </p>
         <br>
         <p class="section-body reveal">
-          <span data-i18n="story_body3">Every bottle of Hermanos AVE is made especially imported from Mexico to preserve the flavours and traditions that have defined this remarkable drink for centuries. No shortcuts. No compromises. Only the authentic.</span>
+          Every bottle of Hermanos AVE is made especially imported from Mexico to preserve the flavours and traditions that have defined this remarkable drink for centuries. No shortcuts. No compromises. Only the authentic.
         </p>
       </div>
       <div style="padding-top: 2rem;">
+        <!-- Lifestyle photo -->
+        <div class="reveal" style="margin-bottom: clamp(1.5rem, 3vw, 2.5rem); overflow: hidden; border: 1px solid var(--gold-dim);">
+          <img src="images/lifestyle-terrace.jpeg" alt="Hermanos AVE Tequila at golden hour" style="width:100%;height:320px;object-fit:cover;object-position:center;display:block;" />
+        </div>
         <!-- Visual accent block -->
         <div class="reveal" style="border: 1px solid var(--gold-dim); padding: clamp(2rem, 4vw, 3.5rem); background: var(--green-brand);">
-          <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:5px;color:var(--teal);display:block;margin-bottom:20px;" data-i18n="story_vp_label">Value proposition</span>
+          <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:5px;color:var(--teal);display:block;margin-bottom:20px;">Value proposition</span>
           <p style="font-family:var(--font-body);font-style:normal;font-size:clamp(1rem,2vw,1.25rem);color:var(--cream-dim);line-height:1.9;">
-            <span data-i18n-html="true" data-i18n="story_vp_quote">"Tequila Hermanos AVE stands out by offering a unique experience that fuses the <strong style='color:var(--gold);font-style:normal;'>tradition</strong> of tequila with a <strong style='color:var(--gold);font-style:normal;'>modern</strong> touch. A pioneer in bringing the authentic and elegant flavors of Mexico to new horizons."</span>
+            "Tequila Hermanos AVE stands out by offering a unique experience that fuses the <strong style="color:var(--gold);font-style:normal;">tradition</strong> of tequila with a <strong style="color:var(--gold);font-style:normal;">modern</strong> touch. A pioneer in bringing the authentic and elegant flavors of Mexico to new horizons."
           </p>
           <div style="width:40px;height:1px;background:var(--gold);margin:28px 0;"></div>
-          <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:4px;color:var(--cream-faint);" data-i18n="story_vp_attr">Hermanos AVE · Brand Manifesto</span>
+          <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:4px;color:var(--cream-faint);">Hermanos AVE · Brand Manifesto</span>
         </div>
 
         <!-- Jalisco details -->
         <div class="reveal" style="margin-top: 2px; display: grid; grid-template-columns: 1fr 1fr; gap: 2px;">
           <div style="background:var(--green-mid);padding:1.5rem;border:1px solid rgba(242,185,12,0.1);">
-            <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:3px;color:var(--cream-faint);display:block;margin-bottom:8px;" data-i18n="story_detail_region">Region</span>
+            <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:3px;color:var(--cream-faint);display:block;margin-bottom:8px;">Region</span>
             <span style="font-family:var(--font-title);font-size:0.85rem;letter-spacing:1px;color:var(--cream-dim);">Jalisco, Mexico</span>
           </div>
           <div style="background:var(--green-mid);padding:1.5rem;border:1px solid rgba(242,185,12,0.1);">
-            <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:3px;color:var(--cream-faint);display:block;margin-bottom:8px;" data-i18n="story_detail_agave_label">Agave</span>
-            <span style="font-family:var(--font-title);font-size:0.85rem;letter-spacing:1px;color:var(--cream-dim);" data-i18n="story_detail_agave_val">100% Blue Agave</span>
+            <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:3px;color:var(--cream-faint);display:block;margin-bottom:8px;">Agave</span>
+            <span style="font-family:var(--font-title);font-size:0.85rem;letter-spacing:1px;color:var(--cream-dim);">100% Blue Agave</span>
           </div>
           <div style="background:var(--green-mid);padding:1.5rem;border:1px solid rgba(242,185,12,0.1);">
-            <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:3px;color:var(--cream-faint);display:block;margin-bottom:8px;" data-i18n="story_detail_desig">Designation</span>
+            <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:3px;color:var(--cream-faint);display:block;margin-bottom:8px;">Designation</span>
             <span style="font-family:var(--font-title);font-size:0.85rem;letter-spacing:1px;color:var(--cream-dim);">NOM 1122 CRT</span>
           </div>
           <div style="background:var(--green-mid);padding:1.5rem;border:1px solid rgba(242,185,12,0.1);">
-            <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:3px;color:var(--cream-faint);display:block;margin-bottom:8px;" data-i18n="story_detail_trad_label">Tradition</span>
-            <span style="font-family:var(--font-title);font-size:0.85rem;letter-spacing:1px;color:var(--cream-dim);" data-i18n="story_detail_trad_val">Artisan methods</span>
+            <span style="font-family:var(--font-title);font-size:0.8rem;letter-spacing:3px;color:var(--cream-faint);display:block;margin-bottom:8px;">Tradition</span>
+            <span style="font-family:var(--font-title);font-size:0.85rem;letter-spacing:1px;color:var(--cream-dim);">Artisan methods</span>
           </div>
         </div>
       </div>
@@ -596,32 +593,32 @@
     <div class="ave-bg-text">AVE</div>
     <div class="ave-grid">
       <div>
-        <span class="section-eyebrow reveal" data-i18n="story_eyebrow2">The name</span>
-        <h2 class="section-title reveal" data-i18n="story_ave_title">What AVE means</h2>
+        <span class="section-eyebrow reveal">The name</span>
+        <h2 class="section-title reveal">What AVE means</h2>
         <div class="gold-line reveal"></div>
         <p class="section-body reveal" style="margin-bottom: 48px;">
-          <span data-i18n="story_ave_intro">AVE is derived from "agave" — the plant from which our tequila is crafted — and from the Spanish word for bird. But each letter carries its own meaning, woven into everything we do.</span>
+          AVE is derived from "agave" — the plant from which our tequila is crafted — and from the Spanish word for bird. But each letter carries its own meaning, woven into everything we do.
         </p>
         <div class="ave-letters">
           <div class="ave-letter reveal">
             <div class="ave-letter-char">A</div>
             <div class="ave-letter-content">
-              <span class="ave-letter-word" data-i18n="story_a_word">Authentic</span>
-              <p class="ave-letter-desc"><span data-i18n="story_a_desc">This represents the traditional craftsmanship of the brand, highlighting the use of genuine 100% agave and production methods that honour generations of Mexican tequila heritage.</span></p>
+              <span class="ave-letter-word">Authentic</span>
+              <p class="ave-letter-desc">This represents the traditional craftsmanship of the brand, highlighting the use of genuine 100% agave and production methods that honour generations of Mexican tequila heritage.</p>
             </div>
           </div>
           <div class="ave-letter reveal">
             <div class="ave-letter-char">V</div>
             <div class="ave-letter-content">
-              <span class="ave-letter-word" data-i18n="story_v_word">Venerable</span>
-              <p class="ave-letter-desc"><span data-i18n="story_v_desc">Worthy of deep respect through age and tradition. This speaks to the generations of Mexican artisans whose mastery and dedication earned tequila-making its rightful place among the world's great spirits.</span></p>
+              <span class="ave-letter-word">Venerable</span>
+              <p class="ave-letter-desc">Worthy of deep respect through age and tradition. This speaks to the generations of Mexican artisans whose mastery and dedication earned tequila-making its rightful place among the world's great spirits.</p>
             </div>
           </div>
           <div class="ave-letter reveal">
             <div class="ave-letter-char">E</div>
             <div class="ave-letter-content">
-              <span class="ave-letter-word" data-i18n="story_e_word">Elegant</span>
-              <p class="ave-letter-desc"><span data-i18n="story_e_desc">This tequila embodies elegance in every sip, leaving a lasting impression of refinement and tradition. Like the birds that inspired our name, Hermanos AVE moves with grace.</span></p>
+              <span class="ave-letter-word">Elegant</span>
+              <p class="ave-letter-desc">This tequila embodies elegance in every sip, leaving a lasting impression of refinement and tradition. Like the birds that inspired our name, Hermanos AVE moves with grace.</p>
             </div>
           </div>
         </div>
@@ -629,13 +626,13 @@
       <div class="ave-quote reveal">
         <span class="ave-quote-mark">"</span>
         <p class="ave-quote-text">
-          <span data-i18n="story_quote1">Longed high above, the canary birds find refuge in the majesty of the agave flower, a wild sanctuary that provides them rest and a feast. The breeze dances among the calyx, whispering inaudible tales, as the sun's rays embrace the birds' soft feathers and the flower's nectar.</span>
+          Longed high above, the canary birds find refuge in the majesty of the agave flower, a wild sanctuary that provides them rest and a feast. The breeze dances among the calyx, whispering inaudible tales, as the sun's rays embrace the birds' soft feathers and the flower's nectar.
         </p>
         <p class="ave-quote-text">
-          <span data-i18n="story_quote2">With a gentle and elegant flutter, they prepare to embark on a flight, leaving behind their temporary home. High in the sky, their destiny awaits them — a song of freedom and adventure.</span>
+          With a gentle and elegant flutter, they prepare to embark on a flight, leaving behind their temporary home. High in the sky, their destiny awaits them — a song of freedom and adventure.
         </p>
         <div style="width:40px;height:1px;background:rgba(242,185,12,0.3);margin:28px auto;"></div>
-        <span class="ave-quote-origin" data-i18n="story_quote_sign">Welcome to the flight. Hermanos AVE, the winged nectar.</span>
+        <span class="ave-quote-origin">Welcome to the flight. Hermanos AVE, the winged nectar.</span>
       </div>
     </div>
   </section>
@@ -643,40 +640,40 @@
   <!-- HISTORY TIMELINE -->
   <section class="history-section">
     <div>
-      <span class="section-eyebrow reveal" data-i18n="story_eyebrow3">Our journey</span>
-      <h2 class="section-title reveal" data-i18n="story_timeline_title">How we got here</h2>
+      <span class="section-eyebrow reveal">Our journey</span>
+      <h2 class="section-title reveal">How we got here</h2>
       <div class="gold-line reveal"></div>
       <p class="section-body reveal">
-        <span data-i18n="story_timeline_sub">From a passion born between brothers to a brand that carries the spirit of Mexico across borders — this is the story of Hermanos AVE.</span>
+        From a passion born between brothers to a brand that carries the spirit of Mexico across borders — this is the story of Hermanos AVE.
       </p>
     </div>
     <div class="history-timeline">
       <div class="timeline-item reveal">
         <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
         <div class="timeline-content">
-          <div class="timeline-title" data-i18n="story_t1_title">The beginning</div>
-          <p class="timeline-text"><span data-i18n="story_t1_body">Two brothers discover their shared passion for authentic Mexican tequila and a vision: to bring the true flavours of Jalisco to new horizons, without compromise.</span></p>
+          <div class="timeline-title">The beginning</div>
+          <p class="timeline-text">Two brothers discover their shared passion for authentic Mexican tequila and a vision: to bring the true flavours of Jalisco to new horizons, without compromise.</p>
         </div>
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
         <div class="timeline-content">
-          <div class="timeline-title" data-i18n="story_t2_title">Finding the source</div>
-          <p class="timeline-text"><span data-i18n="story_t2_body">Hermanos AVE is sourced directly from master distillers in Jalisco — artisans who have been crafting tequila for generations, using only 100% Blue Weber agave grown in the rich volcanic soil of the region.</span></p>
+          <div class="timeline-title">Finding the source</div>
+          <p class="timeline-text">Hermanos AVE is sourced directly from master distillers in Jalisco — artisans who have been crafting tequila for generations, using only 100% Blue Weber agave grown in the rich volcanic soil of the region.</p>
         </div>
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
         <div class="timeline-content">
-          <div class="timeline-title" data-i18n="story_t3_title">The bottle is born</div>
-          <p class="timeline-text"><span data-i18n="story_t3_body">The iconic Hermanos AVE bottle is designed — a clean, architectural vessel hand-printed with the agave flower illustration in gold, topped with a natural wood cork. Bottle design with artwork painted directly onto the glass.</span></p>
+          <div class="timeline-title">The bottle is born</div>
+          <p class="timeline-text">The iconic Hermanos AVE bottle is designed — a clean, architectural vessel hand-printed with the agave flower illustration in gold, topped with a natural wood cork. Bottle design with artwork painted directly onto the glass.</p>
         </div>
       </div>
       <div class="timeline-item reveal">
         <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
         <div class="timeline-content">
-          <div class="timeline-title" data-i18n="story_t4_title">Wings of tradition, elevated taste</div>
-          <p class="timeline-text"><span data-i18n="story_t4_body">With both the Silver and Reposado expressions ready, Hermanos AVE takes flight — bringing the winged nectar to bars, restaurants, and tequila lovers who demand something genuine.</span></p>
+          <div class="timeline-title">Wings of tradition, elevated taste</div>
+          <p class="timeline-text">With both the Silver and Reposado expressions ready, Hermanos AVE takes flight — bringing the winged nectar to bars, restaurants, and tequila lovers who demand something genuine.</p>
         </div>
       </div>
     </div>
@@ -684,50 +681,50 @@
 
   <!-- BRAND VALUES STRIP -->
   <section style="background: var(--green-brand); border-top: 1px solid var(--gold-dim); border-bottom: 1px solid var(--gold-dim); padding: clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,4rem);">
-    <span class="section-eyebrow reveal" style="text-align:center;display:block;" data-i18n="story_values_eyebrow">What we stand for</span>
-    <h2 class="section-title reveal" style="text-align:center;margin-bottom:48px;" data-i18n="story_values_title">Our values</h2>
+    <span class="section-eyebrow reveal" style="text-align:center;display:block;">What we stand for</span>
+    <h2 class="section-title reveal" style="text-align:center;margin-bottom:48px;">Our values</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;">
       <div class="reveal" style="text-align:center;">
         <div style="width:48px;height:48px;border:1px solid var(--gold-dim);border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;">
           <div style="width:16px;height:16px;border-radius:50%;border:1px solid var(--gold);"></div>
         </div>
-        <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:10px;" data-i18n="story_val1_title">Authenticity</span>
-        <p style="font-family:var(--font-body);font-style:normal;font-size:0.85rem;color:var(--cream-dim);line-height:1.8;"><span data-i18n="story_val1_body">Traditional craftsmanship and genuine 100% agave. No shortcuts, no compromises.</span></p>
+        <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:10px;">Authenticity</span>
+        <p style="font-family:var(--font-body);font-style:normal;font-size:0.85rem;color:var(--cream-dim);line-height:1.8;">Traditional craftsmanship and genuine 100% agave. No shortcuts, no compromises.</p>
       </div>
       <div class="reveal" style="text-align:center;">
         <div style="width:48px;height:48px;border:1px solid var(--gold-dim);border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;">
           <div style="width:16px;height:16px;border-radius:50%;border:1px solid var(--gold);"></div>
         </div>
-        <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:10px;" data-i18n="story_val2_title">Quality</span>
-        <p style="font-family:var(--font-body);font-style:normal;font-size:0.85rem;color:var(--cream-dim);line-height:1.8;"><span data-i18n="story_val2_body">Every bottle meets the highest standards — from agave selection to final bottling and labelling.</span></p>
+        <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:10px;">Quality</span>
+        <p style="font-family:var(--font-body);font-style:normal;font-size:0.85rem;color:var(--cream-dim);line-height:1.8;">Every bottle meets the highest standards — from agave selection to final bottling and labelling.</p>
       </div>
       <div class="reveal" style="text-align:center;">
         <div style="width:48px;height:48px;border:1px solid var(--gold-dim);border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;">
           <div style="width:16px;height:16px;border-radius:50%;border:1px solid var(--gold);"></div>
         </div>
-        <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:10px;" data-i18n="story_val3_title">Heritage</span>
-        <p style="font-family:var(--font-body);font-style:normal;font-size:0.85rem;color:var(--cream-dim);line-height:1.8;"><span data-i18n="story_val3_body">Deep respect for Mexican tequila culture and the generations of artisans who perfected the craft.</span></p>
+        <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:10px;">Heritage</span>
+        <p style="font-family:var(--font-body);font-style:normal;font-size:0.85rem;color:var(--cream-dim);line-height:1.8;">Deep respect for Mexican tequila culture and the generations of artisans who perfected the craft.</p>
       </div>
       <div class="reveal" style="text-align:center;">
         <div style="width:48px;height:48px;border:1px solid var(--gold-dim);border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;">
           <div style="width:16px;height:16px;border-radius:50%;border:1px solid var(--gold);"></div>
         </div>
-        <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:10px;" data-i18n="story_val4_title">Sustainability</span>
-        <p style="font-family:var(--font-body);font-style:normal;font-size:0.85rem;color:var(--cream-dim);line-height:1.8;"><span data-i18n="story_val4_body">Committed to responsible production practices that support local communities and protect the land.</span></p>
+        <span style="font-family:var(--font-title);font-size:0.82rem;letter-spacing:3px;color:var(--gold);display:block;margin-bottom:10px;">Sustainability</span>
+        <p style="font-family:var(--font-body);font-style:normal;font-size:0.85rem;color:var(--cream-dim);line-height:1.8;">Committed to responsible production practices that support local communities and protect the land.</p>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="section" style="text-align:center;">
-    <span class="section-eyebrow reveal" style="display:block;" data-i18n="story_cta_eyebrow">Ready to taste the story?</span>
-    <h2 class="section-title reveal" data-i18n="story_cta_title">Explore our expressions</h2>
+    <span class="section-eyebrow reveal" style="display:block;">Ready to taste the story?</span>
+    <h2 class="section-title reveal">Explore our expressions</h2>
     <p class="section-body reveal" style="margin:0 auto 32px;text-align:center;">
-      <span data-i18n="story_cta_body">Two tequilas, crafted with purpose. Each bottle a chapter of the Hermanos AVE story.</span>
+      Two tequilas, crafted with purpose. Each bottle a chapter of the Hermanos AVE story.
     </p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;" class="reveal">
-      <a href="products.html" class="btn btn-gold" data-i18n="story_cta_btn1">Our tequilas</a>
-      <a href="contact.html" class="btn btn-outline" data-i18n="story_cta_btn2">Get in touch</a>
+      <a href="products.html" class="btn btn-gold">Our tequilas</a>
+      <a href="contact.html" class="btn btn-outline">Get in touch</a>
     </div>
   </section>
 
@@ -962,10 +959,10 @@
 </svg></div>
     <div class="footer-brand-name">HERMANOS AVE</div>
       <div class="footer-brand-tequila">T E Q U I L A</div>
-      <p class="footer-tagline"><span data-i18n="footer_tagline">Wings of tradition, elevated taste.</span><br><span data-i18n="footer_subtitle">Born in Jalisco, crafted for the world.</span></p>
+      <p class="footer-tagline">Wings of tradition, elevated taste.<br>Born in Jalisco, crafted for the world.</p>
     </div>
     <div class="footer-col">
-      <span class="footer-col-title" data-i18n="footer_nav">Navigate</span>
+      <span class="footer-col-title">Navigate</span>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Our Tequilas</a></li>
@@ -974,14 +971,14 @@
       </ul>
     </div>
     <div class="footer-col">
-      <span class="footer-col-title" data-i18n="footer_products">Products</span>
+      <span class="footer-col-title">Products</span>
       <ul>
         <li><a href="products.html#reposado">Tequila Reposado</a></li>
         <li><a href="products.html#silver">Tequila Silver</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <span class="footer-col-title" data-i18n="footer_follow">Follow us</span>
+      <span class="footer-col-title">Follow us</span>
       <ul>
         <li><a href="#">Instagram</a></li>
         <li><a href="#">Facebook</a></li>
@@ -990,12 +987,11 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span class="footer-legal-text"><span data-i18n="footer_legal">© 2025 Hermanos AVE Tequila. All rights reserved. Product of Mexico.</span>
-    <span class="footer-drink"><span data-i18n="footer_drink">Please drink responsibly · 18+ only</span>
+    <span class="footer-legal-text">© 2025 Hermanos AVE Tequila. All rights reserved. Product of Mexico.</span>
+    <span class="footer-drink">Please drink responsibly &nbsp;·&nbsp; 18+ only</span>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
-<script src="js/lang.js"></script>
 </body>
 </html>
